@@ -5,6 +5,7 @@ import listEndpoints from 'express-list-endpoints'
 import mongoose from 'mongoose'
 import { badRequestErrorHandler, catchAllErrorHandler, notFoundErrorHandler } from './errorHandlers.js'
 import blogsRouter  from './services/blogPosts/index.js'
+// import commentRouter from './services/comments/index.js'
 
 const server = express()
 
@@ -13,6 +14,7 @@ const port = process.env.PORT || 3001
 server.use(express.json())
 
 server.use("/blogPosts", blogsRouter)
+// server.use('/comments',commentRouter)
 
 
 server.use(badRequestErrorHandler)

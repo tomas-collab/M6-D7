@@ -1,5 +1,6 @@
 import express from 'express'
 import blogModel from './schema.js'
+// import commentModel from '../comments/schema.js'
 import createError from 'http-errors'
 const blogPostsRouter = express.Router()
 
@@ -57,6 +58,8 @@ blogPostsRouter.route('/:blogId')
         next(error)
     }
 })
+
+
 
 
 export default blogPostsRouter

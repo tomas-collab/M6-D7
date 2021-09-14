@@ -16,6 +16,7 @@ const blogSchema = new Schema({
 	      avatar:{type: String,required:true}
 	    }
 	},{
+		content:"HTML",
 		timestamps:true
 	})
 export default model('Blogpost',blogSchema)
