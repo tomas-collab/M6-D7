@@ -1,7 +1,5 @@
 import express from 'express'
 import listEndpoints from 'express-list-endpoints'
-
-
 import mongoose from 'mongoose'
 import { badRequestErrorHandler, catchAllErrorHandler, notFoundErrorHandler } from './errorHandlers.js'
 import blogsRouter  from './services/blogPosts/index.js'

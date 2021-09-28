@@ -19,4 +19,6 @@ const blogSchema = new Schema({
 		content:"HTML",
 		timestamps:true
 	})
+
+	
 export default model('Blogpost',blogSchema)
